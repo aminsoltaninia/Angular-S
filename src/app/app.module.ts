@@ -6,10 +6,10 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { RecipiesComponent } from './recipies/recipies.component';
 import { RecipieListComponent } from './recipies/recipie-list/recipie-list.component';
-import { ResipieDetailComponent } from './recipies/resipie-detail/resipie-detail.component';
 import { RecipieItemComponent } from './recipies/recipie-list/recipie-item/recipie-item.component';
 import { ShoppingListComponent } from './shopping-list/shopping-list.component';
 import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-edit.component';
+import { RecipieDetailComponent } from './recipies/recipie-detail/recipie-detail.component';
 
 @NgModule({
   declarations: [
@@ -17,10 +17,10 @@ import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-ed
     HeaderComponent,
     RecipiesComponent,
     RecipieListComponent,
-    ResipieDetailComponent,
     RecipieItemComponent,
     ShoppingListComponent,
-    ShoppingEditComponent
+    ShoppingEditComponent,
+    RecipieDetailComponent
   ],
   imports: [
     BrowserModule,

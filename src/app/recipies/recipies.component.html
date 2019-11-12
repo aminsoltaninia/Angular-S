@@ -1,1 +1,11 @@
-<p>recipies works!</p>
+<div class="row">
+    <div class="col-md-7">
+        <app-recipie-list (recipieSelected)="onRecipieSelected($event)"></app-recipie-list>
+    </div>
+    <div class="col-md-5">
+        <app-recipie-detail [recipieToDetail] = "recipie" *ngIf = "recipie; else noSelectedRecipie" ></app-recipie-detail>
+        <ng-template #noSelectedRecipie>
+           <p>دستور غذا انتخاب کنید</p>  
+        </ng-template>
+    </div>
+</div>

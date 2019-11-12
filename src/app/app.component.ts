@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'shop';
+  recipieShow : Boolean = true;
+  
+  onNavigation(event){
+      console.log(event); 
+      if(event == 'recipie'){
+        this.recipieShow = true;//hala az in dakhele valedesh bahre mibarim ba ngIf
+      }
+      else
+        this.recipieShow= false; 
+  }
 }
